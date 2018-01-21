@@ -1,5 +1,5 @@
 #
-#/etc/bash.bashrc
+# /etc/bash.bashrc
 #
 
 #If not running interactively, don't do anything
