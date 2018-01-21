@@ -93,7 +93,7 @@ if ${use_color} ; then
 
 	#BSD#@export CLICOLOR=1
 	#GNU#@alias ls='ls --color=auto'
-  ll='ls -al --color=auto'
+	alias ll='ls -al --color=auto'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
@@ -102,9 +102,8 @@ else
 	PS1+='\u@\h \w \$ '
 fi
 
-for sh in /etc/bash/bashrc.d/* ; do
-	[[ -r ${sh} ]] && source "${sh}"
-done
+[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+
 
 # Try to keep environment pollution down, EPA loves us.
 unset use_color sh
