@@ -86,9 +86,9 @@ fi
 
 if ${use_color} ; then
   if [[ ${EUID} == 0 ]] ; then
-    PS1+='\[\033[38;5;1m\]\u\[\033[38;5;9m\]@\h: \[\033[38;5;231m\]\w \[\033[38;5;1m\]\\$>\[$(tput sgr0)\] '
+    PS1+='\[\033[38;5;1m\]\u\[\033[38;5;9m\]@\h: \[\033[38;5;228m\]\w \[\033[38;5;1m\]\\$>\[$(tput sgr0)\] '
   else
-    PS1+='\[\033[38;5;1m\]\u\[\033[38;5;9m\]@\h: \[\033[38;5;231m\]\w \[\033[38;5;1m\]\\$>\[$(tput sgr0)\] '
+    PS1+='\[\033[38;5;1m\]\u\[\033[38;5;9m\]@\h: \[\033[38;5;228m\]\w \[\033[38;5;1m\]\\$>\[$(tput sgr0)\] '
 	fi
 
 	#BSD#@export CLICOLOR=1
@@ -103,14 +103,14 @@ if ${use_color} ; then
 	alias diff='diff --colour=auto'
 	
 	#Less
-	export LESS=-R
-	export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
-	export LESS_TERMCAP_md=$'\E[1;36m'     # begin blink
-	export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
-	export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
-	export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
-	export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
-	export LESS_TERMCAP_ue=$'\E[0m'        # reset underline1
+	#export LESS=-R
+	#export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
+	#export LESS_TERMCAP_md=$'\E[1;36m'     # begin blink
+	#export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
+	#export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
+	#export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
+	#export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
+	#export LESS_TERMCAP_ue=$'\E[0m'        # reset underline1
 	man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
     LESS_TERMCAP_me=$'\e[0m' \
