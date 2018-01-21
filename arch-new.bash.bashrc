@@ -93,6 +93,7 @@ if ${use_color} ; then
 
 	#BSD#@export CLICOLOR=1
 	#GNU#@alias ls='ls --color=auto'
+	alias ls='ls --color=auto'
 	alias ll='ls -al --color=auto'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
