@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 [[ $DISPLAY ]] && shopt -s checkwinsize
-PS1='[\u@\h \W\$ '
+PS1='\[\033[38;5;160m\]\u\[\033[38;5;220m\]@\h:\[\033[38;5;214m\]\w\[\033[38;5;160m\]\\$>\[$(tput sgr0)\]'
 
 case ${TERM} in
   xterm*|rxvt*|Eterm|aterm|kterm|gnome*)
